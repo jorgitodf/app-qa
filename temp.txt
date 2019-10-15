@@ -1,0 +1,21 @@
+//Fora da pasta do projeto
+npm install --global gulp-cli
+
+//Dentro da pasta do projeto
+npm install -E gulp@3.9.1 --save-dev
+npm install browser-sync --save-dev
+npm install -E gulp-sass@3.2.1 --save-dev
+npm install bootstrap --save
+npm install jquery --save
+npm install popper.js --save
+
+
+npm install express body-parser ejs express-ejs-layouts method-override passport express-pino-logger sequelize mysql2 --save
+npm install express-session bcrypt-nodejs connect-flash passport-local --save
+
+
+
+
+
+
+https://www.youtube.com/user/RicVSanches/playlists
