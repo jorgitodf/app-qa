@@ -10,7 +10,7 @@ const passport = require('passport');
 
 const app = express();
 
-app.set('PORT', process.env.PORT || 3000);
+app.set('PORT', process.env.PORT || 3333);
 app.set('HOST', process.env.HOST || 'localhost');
 app.set('NODE_ENV', process.env.NODE_ENV || 'development');
 app.set('view engine', 'ejs');

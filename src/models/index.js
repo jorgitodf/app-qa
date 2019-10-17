@@ -8,7 +8,7 @@ const db = {};
 if (ENV === 'production') {
     sequelize = new Sequelize('mysql://USERNAME:PASSWORD@HOST:PORT/DB_NAME', { operatorsAliases: Sequelize.Op });
 } else {
-    sequelize = new Sequelize('mysql://root:!Z3002019@localhost:3306/app-qa', { operatorsAliases: Sequelize.Op });
+    sequelize = new Sequelize('mysql://admin:123456@localhost:3306/app-qa', { operatorsAliases: Sequelize.Op });
 }
 
 fs
