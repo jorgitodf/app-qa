@@ -2,13 +2,14 @@ const path = require('path');
 const fs = require('fs');
 const Sequelize = require('sequelize');
 const ENV = process.env.NODE_ENV || 'development';
+const config = require('../../config');
 let sequelize = {};
 const db = {};
 
 if (ENV === 'production') {
     sequelize = new Sequelize('mysql://USERNAME:PASSWORD@HOST:PORT/DB_NAME', { operatorsAliases: Sequelize.Op });
 } else {
-    sequelize = new Sequelize('mysql://admin:123456@localhost:3306/app-qa', { operatorsAliases: Sequelize.Op });
+    sequelize = new Sequelize(`mysql://${config.username}:${config.password}@${config.host}:3306/${config.database}`, { operatorsAliases: Sequelize.Op });
 }
 
 fs
