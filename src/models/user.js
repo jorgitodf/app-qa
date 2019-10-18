@@ -43,5 +43,9 @@ module.exports = (sequelize, DataTypes) => {
         user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
     });
 
+/*     sequelize.sync({
+        force: true
+    }); */
+
     return User;
 }
